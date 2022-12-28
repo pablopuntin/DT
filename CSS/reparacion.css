@@ -1,0 +1,25 @@
+* {
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
+.centrar{
+    text-align: center;
+}
+.fondo {
+    background: lightslategray;
+}
+
+/*imagen fondo header*/
+.header {
+	height: 80vh;
+	background-image: url(../IMAGE/index.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
