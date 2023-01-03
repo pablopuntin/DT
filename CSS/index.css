@@ -53,6 +53,30 @@ a img{
 	background-color: rgba(241, 215, 99, 0.8);
 }
 
+/* estilos del footer*/
+.face {
+	font-size: 4em;
+	color: blue;
+}
+
+.linkedin {
+	font-size: 4em;
+	color: rgb(110, 119, 200);
+}
+
+.twitter {
+	font-size: 4em;
+	color: rgb(104, 174, 245);
+}
+
+.bg-footer {
+	background: rgb(66, 66, 66);
+}
+
+.alinear {
+	align-content: space-around;
+}
+
 /* ---------------------------------- */
 /* whatsapp flotante */
 
