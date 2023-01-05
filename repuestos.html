@@ -8,12 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./IMAGE/LOGO.svg">
-    <link rel="stylesheet" href="./CSS/repuestos.css">
+    <link rel="stylesheet" href="./CSS/reparacion.css">
+    <link rel="stylesheet" href="./CSS/galeria.css">
     <link rel="icon" href="./IMAGE/logo/LOGO.ico">
     <title>Bicicleteria D&T</title>
   </head>
-  <body class="fondo">
-    <!--nav-bar-->
+  <body>
+     <!--nav-bar-->
     <section class="sticky-top">    
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
@@ -21,171 +22,71 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            <a class="nav-link" href="reparacion.html">Reparacion</a>
-          </div>
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="repuestos.html">Repuestos</a>
+            </div>
           </div>
         </div>
       </nav>
     </section>
 
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-xl-8">
-          <img class="logo" src="./IMAGE/logo/LOGO.svg" alt="">    
-        </div>
-      </div>
-    </section>
-
+    <header class="header mt-3">
+      <section class="container">
+        <div class="row">
+          <div class="col-xl-12 mb-5">
+            <h1 class="text-center mx-auto w-100 text-alight-center" id="logo1"></h1>
+          </div>
+          <div class="col-xl-12 mt-5">
+            <h2 class="text-center mx-auto w-100 text-alight-center" id="logo2">
     
-    <header class="header">
-        <section class="container">
-          <div class="row">
-            <div class="col-xl-12 mb-5">
-              <h1 class="text-center mx-auto w-100 text-alight-center" id="logo1"></h1>
-            </div>
-            <div class="col-xl-12 mt-5">
-              <h2 class="text-center mx-auto w-100 text-alight-center" id="logo2">
-      
-              </h2>
-            </div>
+            </h2>
           </div>
-        </section>    
-      </header>
-
-      <!--carrusel 1-->
-      <section class="container mt-1">
-        <h2 class="centrar">Seccion repuestos ...1</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./IMAGE/img1.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: .....</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img2.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: ......</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img3.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-    </section>
+      </section>    
+    </header>
+
+    <!--Galeria-->
+<section class="container-fluid bg-dark" id="galeria">
+  <h2 class="text-white text-center display-4">Galeria</h2>
+ 
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg1" class="img-galeria" src="./IMAGE/repuestos/img1.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg2" class="img-galeria" src="./IMAGE/repuestos/img10.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg3" class="img-galeria" src="./IMAGE/repuestos/img11.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg4" class="img-galeria" src="./IMAGE/repuestos/img12.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg5" class="img-galeria" src="./IMAGE/repuestos/img13.jpeg" alt=""onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg6" class="img-galeria" src="./IMAGE/repuestos/img14.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg7" class="img-galeria" src="./IMAGE/repuestos/img15.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg8" class="img-galeria" src="./IMAGE/repuestos/img16.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg9" class="img-galeria" src="./IMAGE/repuestos/img17.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg10" class="img-galeria" src="./IMAGE/repuestos/img18.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg11" class="img-galeria" src="./IMAGE/repuestos/img19.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg12" class="img-galeria" src="./IMAGE/repuestos/img2.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg13" class="img-galeria" src="./IMAGE/repuestos/img20.jpeg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg14" class="img-galeria" src="carrusel/img5.jpg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg15" class="img-galeria" src="carrusel/img6.jpg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg16" class="img-galeria" src="carrusel/img7.jpg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg17" class="img-galeria" src="carrusel/img8.jpg" alt="" onclick="prueba(this)"></div>
+    <div class="col-sm-12 col-md-6 col-lg-4"><img id="myImg18" class="img-galeria" src="carrusel/img9.jpg" alt="" onclick="prueba(this)"></div>
+  </div>
+</div>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>  
 
 
-          <!--carrusel 2-->
-      <section class="container mt-1">
-        <h2 class="centrar">Seccion repuestos ...2</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./IMAGE/img4.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: .....</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img5.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: ......</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img6.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-
-              <!--carrusel 3-->
-      <section class="container mt-1">
-        <h2 class="centrar">Seccion repuestos ...3</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./IMAGE/img7.jpeg" class="d-block img-fluid img-carrusel mx-auto" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: .....</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img8.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Seccion ?</h5>
-                <p>Este repuesto es: ......</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./IMAGE/img3.jpeg" class="d-block img-fluid mx-auto img-carrusel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-
-
-    <!--footer-->
 <section>
   <footer class="container-fluid bg-footer text-center p-5">
     <div class="row">
@@ -207,19 +108,19 @@
       <div class="col-sm-12 col-md-4">
         <div class="row alinear">
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <a href="#" target="_blank">
+            <a href="" target="_blank">
               <i class="fab fa-facebook-square face"></i></a>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <a href="#" target="_blank"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter twitter"></i></a>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <a href="#" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>   
+            <a href="https://www.linkedin.com/in/pablo-puntin-482ab1197" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>   
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 mt-3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.482028042445!2d-62.1145190855275!3d-28.465026666573806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9439d3712975a2b3%3A0x350e5c364f7c204d!2sCordoba%2C%20Los%20Juries%2C%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1614289980923!5m2!1ses-419!2sar" width="80%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="col-sm-12 col-md-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.482028042445!2d-62.1145190855275!3d-28.465026666573806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9439d3712975a2b3%3A0x350e5c364f7c204d!2sCordoba%2C%20Los%20Juries%2C%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1614289980923!5m2!1ses-419!2sar" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </footer>
@@ -228,6 +129,8 @@
 
 
 
+
+    <!--inicio de scripts-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -239,6 +142,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="./JS/global.js"></script>
+    <script src="./JS/galeria.js"></script>
     <script src="fontawesome/fontawesome.min.js"></script>
 <script src="fontawesome/all.min.js"></script>
 

@@ -39,7 +39,7 @@ h2{
     color: rgb(107, 167, 245);
 }
 
-a img{
+.imagen{
 	width: 80%;
 	height: 80%;
 	border:rgb(245, 138, 138) 2px solid ;
@@ -55,8 +55,8 @@ a img{
 
 /* estilos del footer*/
 .face {
-	font-size: 4em;
-	color: blue;
+	font-size: 60px;
+	
 }
 
 .linkedin {

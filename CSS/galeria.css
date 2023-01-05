@@ -1,9 +1,5 @@
 
-.img-galeria {
-	width: 100%;
-	height: 300px;
-	margin: 2px;
-}
+
 
 .img-carrusel {
 	height: 450px;
@@ -111,8 +107,8 @@ Img:hover {
 }
 
 .img-galeria {
-	width: 100%;
+	width: 90%;
 	height: 300px;
-	margin: 2px;
+	margin: 6px;
 }
 /*fin de estilos de la galeria*/
